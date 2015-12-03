@@ -38,17 +38,17 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
     private Button [][]buttons;
     private boolean ischeck;
     int cnt,num1,runtime;
-    private int [][] a={{1, 2, 3,  7, 8, 9,  4, 5, 6},
-            {4, 5, 6,  1, 2, 3,  7, 8, 9},
-            {7, 8, 9,  4, 5, 6,  1, 2, 3},
+    private int [][] a={{6,3,5,2,9,8,7,1,4},
+            {2,7,4,3,5,1,6,8,9},
+            {1,8,9,7,6,4,5,3,2},
 
-            {3, 1, 2,  9, 7, 8,  6, 4, 5},
-            {6, 4, 5,  3, 1, 2,  9, 7, 8},
-            {9, 7, 8,  6, 4, 5,  3, 1, 2},
+            {7,4,8,9,3,6,2,5,1},
+            {9,5,2,1,8,7,4,6,3},
+            {3,6,1,5,4,2,9,7,8},
 
-            {2, 3, 1,  8, 9, 7,  5, 6, 4},
-            {5, 6, 4,  2, 3, 1,  8, 9, 7},
-            {8, 9, 7,  5, 6, 4,  2, 3, 1}};
+            {4,9,3,8,7,5,1,2,6},
+            {8,1,7,6,2,9,3,4,5},
+            {5,2,6,4,1,3,8,9,7}};
     private static final int update_button=1;
     private static final int update_time=2;
     private TextView text_runtime;
@@ -114,7 +114,7 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
         while(true){
             int x = getradom(3);
             int y = getradom(3);
-            //if(x==y)continue;
+            if(x==y)continue;
             for(int i=0;i<3;i++){
                 for(int j=0;j<9;j++){
                     int t=a[i+x*3][j];
@@ -139,9 +139,9 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                 y = getradom(3);
                 if(x==y)continue;
                 for(int j=0;j<9;j++){
-                    int t=a[d+x*3][j];
-                    a[d+x*3][j]=a[d+y*3][j];
-                    a[d+y*3][j]=t;
+                    int t=a[d*3+x][j];
+                    a[d*3+x][j]=a[d*3+y][j];
+                    a[d*3+y][j]=t;
                 }
             }
 
@@ -151,9 +151,9 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                 y = getradom(3);
                 if(x==y)continue;
                 for(int j=0;j<9;j++){
-                    int t=a[j][d+x*3];
-                    a[j][d+x*3]=a[j][d+y*3];
-                    a[j][d+y*3]=t;
+                    int t=a[j][d*3+x];
+                    a[j][d*3+x]=a[j][d*3+y];
+                    a[j][d*3+y]=t;
                 }
             }
             num++;
