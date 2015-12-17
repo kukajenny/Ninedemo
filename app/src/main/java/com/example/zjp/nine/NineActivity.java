@@ -268,6 +268,7 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }
             }
+            buttons[x][y].setBackgroundColor(getResources().getColor(R.color.select_color8));
         }
     }
 
@@ -382,8 +383,8 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
         }
         else {
             int flag=Integer.parseInt(buttons[x][y].getText().toString());
-            setcolor(x,y,flag);
-            buttons[x][y].setBackgroundColor(getResources().getColor(R.color.select_color8));
+            setcolor(x, y, flag);
+
         }
 
 

@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.nine_button1:ans=2;break;
-            case R.id.nine_button2:ans=30;break;
-            case R.id.nine_button3:ans=20;break;
+            case R.id.nine_button1:ans=20;break;
+            case R.id.nine_button2:ans=35;break;
+            case R.id.nine_button3:ans=50;break;
         }
         Intent intent = new Intent(MainActivity.this,NineActivity.class);
         intent.putExtra("data",ans);
