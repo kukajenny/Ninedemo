@@ -5,8 +5,8 @@
 ##难度划分
 根据空格的多少来划分难度，空格越多，难度系数越高。
 ##应用展示
-<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_select.png" width="220" height="380"/> 
-<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_game.png" width="220" height="380"/> 
-<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_game_num.png" width="220" height="380"/> 
-<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_hint.png" width="220" height="380"/> 
+<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_select.png" width="210" height="380"/> 
+<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_game.png" width="210" height="380"/> 
+<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_game_num.png" width="210" height="380"/> 
+<img src="https://github.com/kukajenny/Ninedemo/blob/master/SceenShots/nine_hint.png" width="210" height="380"/> 
 
